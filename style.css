@@ -1113,6 +1113,10 @@ footer .social-icons a:hover {
   
     ),url("media BPA/Señalización.jpg");
   }
+
+  footer {
+    box-shadow:2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
   footer .container {
     display: flex;
     flex-direction: row;
@@ -1127,6 +1131,7 @@ footer .social-icons a:hover {
     padding: 0px 20px;
     justify-content: space-between;
     gap: 20px;
+    
   }
 
   
