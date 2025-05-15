@@ -1,0 +1,365 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid&display=swap'); 
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&display=swap');
+
+*{
+  box-sizing: border-box;
+    
+}
+
+body{
+  font-family: 'Roboto Condensed', Georgia, 'Times New Roman', Times, serif;
+  margin: 0;
+}
+
+h1{ font-size: 3.5em;}
+h2{ font-size: 2.7em;}
+h3{ font-size: 2em;}
+p{ font-size: 1.25em;}
+
+button{
+  font-size: 1.5em;
+  font-weight: bold;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  background-color: rgb(13, 97, 50);
+    
+}
+.color-acento{
+  color: rgb(7, 68, 33);
+}
+button:hover{
+  color: green;
+  background-color: rgb(255, 255, 255);
+  cursor: pointer;
+}
+.container{
+  max-width: 1440px;
+  margin: auto;
+} 
+
+/* HEADER */
+    
+header{
+  background-color: rgb(245, 245, 245);
+}
+header .logo{
+  margin: 0;
+  padding: 10px 10px;
+  font-family: 'Londrina Solid', cursive;
+  font-weight: bold;
+  color: rgb(13, 97, 50);
+  font-size: 2.5em;
+    
+}
+header .img-logo img {
+  width: 40px; 
+  height: auto; 
+  vertical-align: middle; 
+}
+header .container_logo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: auto;
+}
+header .container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 425px;
+}
+
+header .xis{
+  color: #359b55;
+}
+header .qua{
+  color: #f7b700;
+}
+
+header nav{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px 20px 20px;
+}
+
+header a{
+  padding: 5px 12px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+}
+
+header a:hover{
+  color: #359b55;
+  transform: scale(1.1);
+}
+header p {
+  font-family: 'Londrina Solid', cursive;
+}
+
+/* HERO */
+
+#hero{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 60vh;
+    color: white;
+    background-image: linear-gradient(
+        0deg,rgba(0,0,0,0.5),
+        rgba(0,0,0,0.5)
+
+    ),url("media BPA/HERO_m.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position:center center;
+}
+#hero .large-text{
+    font-size: 0.75em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+#hero .small-text{
+    font-size: 1em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+}
+
+#hero .title-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    max-width: 800px; 
+    margin: 0 auto; 
+}
+
+#market .container{
+  display: flex;
+  justify-items: center;
+  justify-content: center;
+  max-width: 1440px;
+  padding: 40px 20px;
+  
+}
+
+#market .img-container{
+  background-image: url("media BPA/PROXIMAMENTE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%; 
+  height: 50vh; 
+}
+
+
+/* footer */
+footer {
+  background-color: darkgreen;
+  padding: 20px 0;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+}
+
+footer .container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+footer ul li {
+  margin-bottom: 5px;
+}
+
+footer ul li a {
+  text-decoration: none;
+  color: #ffffff;
+  transition: color 0.3s;
+}
+
+footer ul li a:hover {
+  color: #e7e42a;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: auto;
+  padding: 0px 10px;
+  gap: 30px;
+}
+
+footer .social-icons a {
+  font-size: 1.5em;
+  color: #ffffff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+footer .social-icons a:hover {
+  color: #eee020;
+}
+
+
+/* MEDIA QUERIES */
+
+@media (min-width: 760px){
+
+  header{
+    position: fixed;
+    width: 100%;
+  }
+  header .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    max-width: 1440px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  header .container_logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 20px;
+    padding:20px 20px 20px;
+  }
+  header .logo span {
+    transition: color 0.3s ease, transform 0.3s ease; 
+  }
+
+  header .logo:hover {
+    color: #1e6f3d; 
+    transform: scale(1.1); 
+  }
+
+  header .xis:hover {
+    color: #1e6f3d; 
+    transform: scale(1.1); 
+  }
+
+  header .qua:hover {
+    color: #d89a00; 
+    transform: scale(1.1); 
+  }
+
+  header nav{
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    padding-right: 20px;
+  }
+
+  /* section hero */
+
+  #hero{
+    height: 90vh;
+  }
+
+  #hero .large-text{
+    font-size: 2.5em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  #hero .small-text{
+    font-size: 2em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  #market .img-container{
+  background-image: url("media BPA/PROXIMAMENTE.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  width: 100%; 
+  height: 60vh; 
+}
+
+  
+  footer .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  footer .social-icons {
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  
+
+}
+
+
+@media screen and (max-width: 320px) {
+  
+  header nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px 20px 20px;
+    max-width: 320px;
+  }
+  header a{
+  padding: 5px 12px;
+  font-size: 13px;
+  text-decoration: none;
+  font-weight: bold;
+  color: black;
+  }
+  #hero .large-text{
+    font-size: 0.7em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  #hero .small-text{
+    font-size: 0.8em;
+    font-weight: bold;
+    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+  }
+  #hero .btn_1{
+    font-size: medium;
+  }
+  #son .container{
+    padding: 100px 40px;
+  }
+
+}
+
+
+
+
+
+  
