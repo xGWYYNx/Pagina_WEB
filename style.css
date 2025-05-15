@@ -25,7 +25,7 @@ button{
   border: 1px solid rgba(0, 0, 0, 0.3);
   box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
   color: white;
-  background-color: rgb(13, 97, 50);
+  background-color: #136d45;
     
 }
 .color-acento{
@@ -57,7 +57,6 @@ header .logo{
   padding: 10px 10px;
   font-family: 'Londrina Solid', cursive;
   font-weight: bold;
-  color: rgb(13, 97, 50);
   font-size: 2.5em;
     
 }
@@ -157,8 +156,9 @@ header p {
   padding: 100px 40px;
 }
 #son .container h2{
-  color: rgb(13, 97, 50);
+  color: #136d45;
   font-family: 'Londrina Solid', cursive;
+  font-weight: normal;
 }
 
 #son .texto{
@@ -189,7 +189,7 @@ header p {
 #son .p_3{
   padding: 0px 20px;
   text-align: justify;
-  color: rgb(7, 68, 33);
+  color: #136d45;
   font-weight: bold;
   font-style: italic;
   font-size: 1.2rem;
@@ -198,7 +198,7 @@ header p {
 /* seccion 3 */
 
 #carrusel {
-  background-color: rgb(13, 97, 50);
+  background-color: #136d45;
   color: white;
   text-align: center; 
   
@@ -209,6 +209,13 @@ header p {
   width: 95%;
   padding: 50px 20px;
   font-family: 'Londrina Solid', cursive;
+}
+
+#carrusel h2 {
+  color: white;
+  text-align: center;
+  margin-top: 0;
+  font-weight: normal;
 }
 
 .slider-wrapper {
@@ -320,11 +327,11 @@ header p {
 }
 
 #Guia h2{
-  color:rgb(13, 97, 50);
+  color:#136d45;
   text-align: center;
   font-size: 3.2em;
   margin-top: 0;
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'Londrina Solid', cursive;;
 }
 
@@ -343,7 +350,7 @@ header p {
 
 
 #Radio {
-  background-color: rgb(13, 97, 50);
+  background-color: #136d45;
   color: white;
   text-align: center; 
 }
@@ -366,18 +373,18 @@ header p {
   padding: 20px 20px;
   box-shadow: rgb(0, 0, 0);
   background-color: rgb(255, 255, 255);
-  color: rgb(7, 68, 33);
+  color: #136d45;
   border-radius: 30px;
 }
 
 #Radio .container h2{
-  color: rgb(13, 97, 50);
+  color: #136d45;
   text-align: center;
   align-items: center;
   font-size: 3.2em;
   padding: 20px 0px;
   margin: 0;
-  font-weight: bold;
+  font-weight: normal;
   font-family: 'Londrina Solid', cursive;
 }
 #Radio .p-1{
@@ -421,7 +428,7 @@ font-weight: bold;
 
 #play-pause, #reset {
   font-size: 1.5em;
-  background-color: rgb(13, 97, 50);
+  background-color: #136d45;
   color: white;
   border: none;
   border-radius: 50%;
@@ -452,7 +459,7 @@ font-weight: bold;
   width: 10px;
   height: 10px;
   border-radius: 50%;
-  background-color: rgb(13, 97, 50);
+  background-color: #136d45;
   cursor: pointer;
 }
 
@@ -476,8 +483,7 @@ font-weight: bold;
 }
 
 #Infografia .titulo{
-  padding: 20px 0px;
-  text-align: left;
+  padding: 0;
   font-size: 1.3rem;
   margin: 0;
   
@@ -486,7 +492,13 @@ font-weight: bold;
 #Infografia .container h2{
   margin: 0;
   font-family: 'Londrina Solid', cursive;
-  color: rgb(13, 97, 50);
+  color: #136d45;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0;
+  font-weight: normal;
 }
 
 #Infografia .texto{
@@ -499,11 +511,12 @@ font-weight: bold;
 #Infografia .texto p{
   font-size: 1.2rem;
   text-align: center;
+  margin: 0;
 }
 
 #Infografia .texto span{
   font-weight: bold;
-  color: rgb(13, 97, 50);
+  color: #136d45;
 }
 
 #Infografia .img-container-iconos{
@@ -564,7 +577,7 @@ font-weight: bold;
 /* Section 7 */
 
 #nuestros-servicios{
-  background-color: rgb(2, 84, 45);
+  background-color:#136d45;
   color: white;
   text-align: center;
 }
@@ -578,6 +591,7 @@ font-weight: bold;
   margin-top: 0;
   font-size: 3.2em;
   font-family: 'Londrina Solid', cursive;
+  font-weight: normal;
 }
 
 
@@ -728,7 +742,7 @@ button c {
 
 /* footer */
 footer {
-  background-color: darkgreen;
+  background-color: #136d45;
   padding: 20px 0;
   color: #ffffff;
   font-family: Arial, sans-serif;
