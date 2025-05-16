@@ -123,7 +123,7 @@ header p {
     background-position:center center;
 }
 #hero .large-text{
-    font-size: 1.5em;
+    font-size: 1.3em;
     font-weight: bold;
     text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
 }
@@ -333,7 +333,7 @@ footer .social-icons a:hover {
     max-width: 320px;
   }
   header a{
-  padding: 5px 12px;
+  padding: 5px 5px;
   font-size: 13px;
   text-decoration: none;
   font-weight: bold;

@@ -1061,12 +1061,14 @@ footer .social-icons a:hover {
 
   #nuestros-servicios .programas{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
+    gap: 20px;;
   }
   #nuestros-servicios .container p{
     display: block;
     margin: 30px 0px 30px;
-    text-align: justify;
+    text-align: center;
+    
   }
 
   /* section 7 */
@@ -1077,7 +1079,7 @@ footer .social-icons a:hover {
   #nuestros-servicios h3{
     margin-top: 0px;
     text-align: center;
-    color: rgb(245, 245, 245);
+    color: #f7b700;
     font-family: 'Roboto Condensed',sans-serif;
   }
   #nuestros-servicios .carta{
@@ -1088,6 +1090,15 @@ footer .social-icons a:hover {
     background-color: rgb(255, 255, 255);
     color: rgb(7, 68, 33);
     box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.5);
+    margin: 0;
+    flex: 1 1 300px;
+    max-width: 350px;
+    align-items: center;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
     
   } 
   .carta:first-child{
@@ -1273,7 +1284,7 @@ footer .social-icons a:hover {
     max-width: 320px;
   }
   header a{
-  padding: 5px 12px;
+  padding: 5px 5px;
   font-size: 13px;
   text-decoration: none;
   font-weight: bold;
