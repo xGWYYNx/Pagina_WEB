@@ -42,9 +42,17 @@
         <!-- section 2 -->
 
         <section id="anfitrión">
-            <div class="container_paco">
-                <h2>¿Quién es Paco?</h2>
-                <p class="p_1">"Paco no es solo un nombre, es una historia, una forma de ver el mundo."</p><p class="p_2">¿Te atreves a conocerlo?</p>
+            <div class="container_paco_1">
+                <div class="tp_1">
+                    <h2>¿Quién es Paco?</h2>
+                    <div class="img-container"></div>
+                </div>
+            </div>
+            <div class="container_paco_2">
+                <div class="texto_2">
+                    
+                    <p class="p_1">Paco es un personaje animado creado para acercar, de forma clara y amigable, las Buenas Prácticas Agrícolas a los campesinos de Pasca.</p><p class="p_2">¿Te atreves a conocerlo?</p>
+                </div>
             </div>
             <div class="container">
                 <div class="texto_1"> 
@@ -62,18 +70,85 @@
             
             <div class="container">
                 <div class="texto_1">
-                    <h2 class="titulo">Paco <span>al Grano</span></h2>
+                    <h2 class="titulo">Creación</h2>
                     <div class="image-grid">
                         <div class="grid-item big"><img src="media BPA/Paco_gif.gif" alt="Big"></div>
-                        <div class="grid-item small"><img src="media BPA/Paco.png" alt="Small 1"></div>
-                        <div class="grid-item small"><img src="media BPA/Paco.png" alt="Small 2"></div>
-                        <div class="grid-item small"><img src="media BPA/Paco.png" alt="Small 3"></div>
+                        <div class="grid-item small"><img src="media BPA/Paco_line.jpg" alt="Small 1"></div>
+                        <div class="grid-item small"><img src="media BPA/Paco_color.jpg" alt="Small 2"></div>
+                        <div class="grid-item small"><img src="media BPA/Paco_shadow.jpg" alt="Small 3"></div>
                     </div>
                     
-                    <p class="tp_1">Soy <span class="subrayado">Paco al Grano</span> y te doy la bienvenida a este espacio creado especialmente para ti. Aquí encontrarás <span>contenidos prácticos, claros y útiles</span> desarrollados por nuestro equipo para ayudarte a mejorar tus prácticas agrícolas. </p>    
+                    <p class="tp_1">Paco es un personaje animado creado para representar al agricultor colombiano. Surge como respuesta a la necesidad de generar empatía con los campesinos de Pasca, buscando facilitar la comunicación de las Buenas Prácticas Agrícolas (BPA) de forma clara, cercana y efectiva. </p>    
                 </div>
             </div>
             
+        </section>
+
+        <!-- section 4 -->
+
+         <section id="porque">
+            
+            <div class="container">
+                <div class="texto_1">
+                    <h2 class="titulo">¿Porque creamos a Paco?</h2>
+                    <p class="tp_1"> Durante el trabajo de campo, muchos agricultores expresaron la dificultad de entender materiales técnicos o extensos. Por eso, creamos a Paco: un personaje con quien puedan identificarse. Él traduce conceptos complejos en mensajes simples, usando ejemplos cotidianos y un lenguaje amigable. </p>
+                    <div class="img-container"></div>    
+                </div>
+            </div>
+            
+        </section>
+
+        <section id="voz">
+            
+            <div class="container">
+                <div class="texto_1">
+                    <h3 class="text-2xl font-semibold mb-2">La voz de Paco</h3>
+                    <p class="text-lg mb-4">
+                    ¡Escucha cómo Paco te explica lo que necesitas saber sobre el trabajo en la finca!
+                    </p>
+                </div>
+            </div>            
+            <audio controls class="w-full max-w-md">
+            <source src="media BPA\Podcast 2.mp3" type="audio/mpeg">
+            Tu navegador no soporta audio HTML.
+            </audio>
+            <blockquote class="mt-4 italic text-green-800">
+            “Aquí estamos pa' aprender a cuidar lo que sembramos, ¡como debe ser!”
+            </blockquote>
+        </section>
+
+        <section id="conectate">
+            <h3 class="text-2xl font-semibold mb-2">Conéctate con Paco</h3>
+            <p class="text-lg mb-4">
+            Sigue aprendiendo con Paco en sus diferentes espacios:
+            </p>
+            <ul class="list-disc list-inside text-lg space-y-1">
+                <li><a href="#" class="text-green-600 hover:underline">Escucha su pódcast en Furor Estéreo</a></li>
+                <li><a href="#" class="text-green-600 hover:underline">Síguelo en Facebook</a></li>
+                <li><a href="#" class="text-green-600 hover:underline">Envíale tu mensaje o audio</a></li>
+            </ul>
+        </section>
+
+        <section id="te_pareces">
+            <h3 class="text-2xl font-semibold mb-2">¿Te pareces a Paco?</h3>
+            <p class="text-lg mb-4">
+            Comparte tu historia, una foto o un audio contando cómo aplicas las BPA en tu finca.
+            </p>
+            <form class="bg-gray-100 p-6 rounded shadow-md space-y-4">
+            <div>
+                <label class="block mb-1 font-semibold">Tu nombre</label>
+                <input type="text" class="w-full border rounded px-3 py-2" placeholder="Ej: Don Teodomiro">
+            </div>
+            <div>
+                <label class="block mb-1 font-semibold">Tu mensaje</label>
+                <textarea class="w-full border rounded px-3 py-2" rows="4" placeholder="¿Qué haces para cuidar tu cultivo?"></textarea>
+            </div>
+            <div>
+                <label class="block mb-1 font-semibold">Sube una foto o audio</label>
+                <input type="file">
+            </div>
+            <button type="submit" class="bg-green-700 text-white px-4 py-2 rounded hover:bg-green-800">Enviar</button>
+            </form>
         </section>
 
 

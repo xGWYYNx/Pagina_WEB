@@ -612,7 +612,7 @@ font-weight: bold;
     0deg,rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
 
-  ),url("media BPA/Farid-Foto.jpg");
+  ),url("media BPA/Paco_img.jpg");
 }
 
 .carta:nth-child(2){
@@ -620,7 +620,7 @@ font-weight: bold;
     0deg,rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
 
-  ),url("media BPA/Jaramillo-Foto.jpg");
+  ),url("media BPA/Recursos_img.jpg");
 }
 
 .carta:nth-child(3){
@@ -628,7 +628,7 @@ font-weight: bold;
     0deg,rgba(0,0,0,0.5),
     rgba(0,0,0,0.5)
 
-  ),url("media BPA/HERO.jpg");
+  ),url("media BPA/Mercado_Img.jpg");
 }  
 #our-team .container {
   display: flex;
@@ -1095,7 +1095,7 @@ footer .social-icons a:hover {
       0deg,rgba(0,0,0,0.5),
       rgba(0,0,0,0.5)
   
-    ),url("media BPA/Señalización.jpg");
+    ),url("media BPA/Paco_img.jpg");
   }
   
   .carta:nth-child(2){
@@ -1103,7 +1103,7 @@ footer .social-icons a:hover {
       0deg,rgba(0,0,0,0.5),
       rgba(0,0,0,0.5)
   
-    ),url("media BPA/Señalización.jpg");
+    ),url("media BPA/Recursos_img.jpg");
   }
   
   .carta:nth-child(3){
@@ -1111,7 +1111,7 @@ footer .social-icons a:hover {
       0deg,rgba(0,0,0,0.5),
       rgba(0,0,0,0.5)
   
-    ),url("media BPA/Señalización.jpg");
+    ),url("media BPA/Mercado_Img.jpg");
   }
 
   footer {

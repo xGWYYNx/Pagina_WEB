@@ -144,6 +144,8 @@ header p {
 
 #anfitrión {
   background-color: #136d45;
+  justify-content: center;
+  align-items: center;
 }
 
 #anfitrión .container{
@@ -151,30 +153,61 @@ header p {
   align-items: center;
   display: none;
   flex-direction: column;
-  padding: 50px 40px;
   
 }
 
-#anfitrión .container_paco{
+
+#anfitrión .container_paco_1{
   display: flex;
   flex-direction: column;
   justify-items: center;
   justify-content: center;
   align-items: center;
-  max-width: 1440px;
-  padding: 40px 40px;
+  margin: auto;
+  padding: 50px 50px;  
 }
 
-.container_paco h2{
-  color: white;
+#anfitrión .container_paco_2{
+  display: flex;
+  flex-direction: column;
+  justify-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  padding: 50px 50px;  
+}
+
+#anfitrión .tp_1{
+  background-color: white;
+  color: #136d45;
+  align-items: center;
+  justify-content: center;
+  text-align: center;  
+}
+
+#anfitrión .texto_2{
+  background-color: white;
+  color: #136d45;
+  padding: 20px 20px;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border-radius: 30px;  
+}
+
+.container_paco_1 h2{
+  color: #136d45;
   font-family: 'Londrina Solid', cursive;
   font-weight: normal;
+  padding: 20px 0px 40px;
+  margin: 0;
 }
 .p_1{
-  color: white;
-  font-weight: normal;
+  color: #136d45;
   font-style: italic;
-  font-size: 1.2em;
+  font-size: 1.1em;
+  padding-top: 20px;
+  margin: 0;
 }
 
 .p_2{
@@ -182,7 +215,9 @@ header p {
   font-family: 'Londrina Solid', cursive;
   font-weight: normal;
   font-style: italic;
-  font-size: 2.2em;
+  font-size: 1.8em;
+  padding: 30px 0px 30px;
+  margin: 0;
 }
 
 #anfitrión .texto_1{
@@ -191,31 +226,28 @@ header p {
   display: flex;
   flex-direction: column;
 }
-#anfitrión .texto_2{
-  display: none;
-}
 #anfitrión .texto_1 h2{
   color: white;
   font-family: 'Londrina Solid', cursive;
   font-weight: normal;
 }
 #anfitrión .img-container{
-  background-image:
-  url("media BPA/Paco.png");
+  background-image:url("media BPA/Paco.png");
   background-size: cover;
   background-position: center center;
   height: 200px;
   width: 200px;
-  border-radius: 50%;
   align-items: center;
   justify-content: center;
   text-align: center;
+  margin: auto;
 }
 
 #anfitrión .tp_1{
   font-size: 1.5rem;
   font-weight: bold;
   color: rgb(7, 68, 33);
+  border-radius: 30px;
 }
 
 #anfitrión .tp_2{
@@ -235,16 +267,9 @@ header p {
   display: flex;
   flex-direction: column;
   padding: 50px 40px;
-  
 }
-#quien_es .contenedor_imagenes{
-  text-align: center;
-  align-items: center;
-  display: grid 2columns 1row;
-  flex-direction: column;
-  padding: 50px 40px;
-  
-}
+
+
 
 #quien_es .img-container{
   background-image:
@@ -261,6 +286,25 @@ header p {
   padding: 10px 10px;  
 }
 
+#quien_es .container h2{
+  font-family: 'Londrina Solid', cursive;
+  font-weight: normal;
+  padding: 20px 0px 20px;
+  margin: 0;
+}
+
+#quien_es .tp_1{
+  display: flex;
+  font-size: 1em;
+  justify-content: center;
+  text-align: justify;
+  align-items: center;
+  padding: 20px 20px 20px;
+  margin: 0;
+  border-radius: 30px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+}
+
 .image-grid {
   display: grid;
   grid-template-areas:
@@ -272,6 +316,7 @@ header p {
   gap: 10px;
   max-width: 1200px;
   margin: auto;
+  padding: 20px 0px 20px;
 }
 
 .grid-item.big {
@@ -288,6 +333,7 @@ header p {
   object-fit: cover;
   display: block;
   border-radius: 12px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
 }
 
 
@@ -475,6 +521,10 @@ footer .social-icons a:hover {
     color: rgb(13, 97, 50);
   }
 
+  #anfitrión .container{ 
+    display: none; 
+  }
+
 
   
   footer .container {
@@ -493,9 +543,7 @@ footer .social-icons a:hover {
     gap: 20px;
   }
   
-  #anfitrión .container{ 
-    display: none; 
-  }
+  
 
   
 
@@ -516,7 +564,7 @@ footer .social-icons a:hover {
     max-width: 320px;
   }
   header a{
-  padding: 5px 12px;
+  padding: 5px 5px;
   font-size: 13px;
   text-decoration: none;
   font-weight: bold;
