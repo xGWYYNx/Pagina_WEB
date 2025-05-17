@@ -43,6 +43,7 @@ button:hover{
 /* HEADER */
     
 header{
+  z-index: 1000; /* Higher z-index to stay on top of other sections */
   background-color: rgb(245, 245, 245);
 }
 header .logo{
