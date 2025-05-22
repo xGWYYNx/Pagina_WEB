@@ -769,11 +769,11 @@ header p {
   box-shadow: 0 2px 8px rgba(0,0,0,0.08);
 }
 
-#recuerda .bubble p {
+#recuerda .bubble_text {
   margin: 0;
   font-family: 'Londrina Solid', cursive;
   font-weight: normal;
-  font-size: 1.5em;
+  font-size: 1.2em;
   color: #f7b700;
 }
 #recuerda .bubble:before {
@@ -973,79 +973,148 @@ footer .social-icons a:hover {
   background-color: white;
 }
 
-#quien_es .container_1{
-  text-align: center;
-  align-items: center;
-  display: flex;
-  flex-direction: row;
-  padding: 50px 40px;
-}
+  #quien_es .container_1{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    padding: 60px 60px;
+  }
 
-#quien_es .img-container{
-  background-image:
-  url("media BPA/Paco.png");
-  background-size: cover;
-  background-position: center center;
-  height: 100px;
-  width: 100px;
-  border-radius: 30px;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-  padding: 10px 10px;  
-}
+  #quien_es .texto_1{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+  }
 
-#quien_es .container_1 h2{
-  color: #136d45;
-  font-family: 'Londrina Solid', cursive;
-  font-weight: normal;
-  padding: 20px 0px 20px;
-  margin: 0;
-}
+  #quien_es .content{
+    padding: 40px 40px;
 
-#quien_es .tp_1{
-  display: flex;
-  font-size: 1em;
-  justify-content: center;
-  text-align: justify;
-  align-items: center;
-  padding: 20px 20px 20px;
-  margin: 0;
-  border-radius: 30px;
-  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
-}
+  }
 
-.image-grid {
-  display: grid;
-  grid-template-areas:
-    "big small1"
-    "big small2"
-    "big small3";
-  grid-template-columns: 2fr 1fr;
-  grid-template-rows: repeat(3, 1fr);
-  gap: 10px;
-  max-width: 800px;
-  margin: auto;
-  padding: 20px 0px 20px;
-}
+  #quien_es .content h2{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 4rem;
+    font-weight: normal;
+    margin: 0;
+  }
 
-.grid-item.big {
-  grid-area: big;
-}
+  #quien_es .content p{
+    font-size: 1.5rem;
+  }
 
-.grid-item.small:nth-child(2) { grid-area: small1; }
-.grid-item.small:nth-child(3) { grid-area: small2; }
-.grid-item.small:nth-child(4) { grid-area: small3; }
+  #quien_es .img-container{
+    background-image:
+    url("media BPA/Paco.png");
+    background-size: cover;
+    background-position: center center;
+    height: 100px;
+    width: 100px;
+    border-radius: 30px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+    padding: 10px 10px;  
+  }
 
-.image-grid img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  display: block;
-  border-radius: 12px;
-  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
-}
+  #quien_es .container_1 h2{
+    color: #136d45;
+    font-family: 'Londrina Solid', cursive;
+    font-weight: normal;
+    padding: 20px 0px 20px;
+    margin: 0;
+  }
+
+  #quien_es .tp_1{
+    display: flex;
+    font-size: 1em;
+    justify-content: center;
+    text-align: justify;
+    align-items: center;
+    padding: 20px 20px 20px;
+    margin: 0;
+    border-radius: 30px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  }
+
+  .image-grid {
+    display: grid;
+    grid-template-areas:
+      "big small1"
+      "big small2"
+      "big small3";
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: repeat(3, 1fr);
+    gap: 10px;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px 0px 20px;
+  }
+
+  .grid-item.big {
+    grid-area: big;
+  }
+
+  .grid-item.small:nth-child(2) { grid-area: small1; }
+  .grid-item.small:nth-child(3) { grid-area: small2; }
+  .grid-item.small:nth-child(4) { grid-area: small3; }
+
+  .image-grid img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 12px;
+    box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.5);
+  }
+
+
+  #porque .container{
+    padding: 60px 60px;
+  }
+  
+  #porque .texto_1{
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  #porque .container h2{
+    color: #f7b700;
+    font-family: 'Londrina Solid', cursive;
+    font-size: 4rem;
+    font-weight: normal;
+    padding: 20px 0px 20px;
+    margin: 0;
+  }
+
+  #porque .container p{
+    padding: 20px 100px;
+    font-size: 1.5rem;
+    text-align: justify;
+  }
+
+  #porque .img-container{
+    height: 520px;
+    width: 1080px;
+
+  }
+
+
+  #conectate .video-modal video{
+    width: 120vw;
+    max-width: 1200px;
+    max-height: 1200px;
+    border-radius: 12px;
+    background: #000;
+  }
+
+
 
 
   #recuerda .circle-img{
@@ -1056,7 +1125,21 @@ footer .social-icons a:hover {
   #recuerda .bubble{
     max-width: 600px;
     text-align: center ;
-    font-size: 1.5em;
+  }
+
+  #recuerda .bubble_text_1{
+    font-family: roboto condensed;
+    font-size: 3.5em;
+    font-weight: normal;
+    color: #f7b700;
+
+  };
+
+  #recuerda .bubble_text{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2.5em;
+    font-weight: normal;
+    color: #f7b700;
   }
 
 
@@ -1077,22 +1160,41 @@ footer .social-icons a:hover {
     gap: 20px;
   }
 
-  .video-modal {
-    display: none;
-  /* ...other styles... */
-  }
-  .video-modal.active {
-    display: flex;
-  }
-
-  .video-carousel { max-width: 98vw; }
-  .carousel-item video { max-height: 300px; }
+  
 
   
   
   
 
   
+}
+
+.video-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.85);
+  justify-content: center;
+  align-items: center;
+}
+.video-modal.active {
+  display: flex;
+}
+.video-modal video {
+  width: 90vw;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 12px;
+  background: #000;
+}
+.close-modal {
+  position: absolute;
+  top: 30px; right: 40px;
+  color: #fff;
+  font-size: 2.5em;
+  cursor: pointer;
+  z-index: 10001;
 }
 
 @media (max-width: 700px) {
