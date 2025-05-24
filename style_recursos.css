@@ -39,7 +39,11 @@ button:hover{
 .container{
   max-width: 1440px;
   margin: auto;
-} 
+}
+
+#recuerda .lista_social a span {
+  display: inline;
+}
 
 /* HEADER */
     
@@ -370,118 +374,146 @@ header p {
 }
 
 
+/* section 7 */
 
+#recuerda{
+  color: #136d45;
+}
 
-
-/* section 5 */
-
-#our-team .container {
+#recuerda .container{
+  text-align: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
+  padding: 60px 40px;
+}
+
+#recuerda .img-container{
+  background-image: url("media BPA/Paco.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  width: 200px;
+}
+
+#recuerda .bubble-image-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  margin: 40px 0;
+}
+
+#recuerda .circle-img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
   align-items: center;
   justify-content: center;
-  padding: 50px 20px;
-}
-.our-team {
-  text-align: center;
-  padding: 50px 20px;
-  background-color: #f9f9f9;
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.10);
 }
 
-.our-team h2 {
-  font-size: 2.5em;
-  color: rgb(7, 68, 33); /* Green color */
-  margin-bottom: 30px;
-  font-family: 'Londrina', cursive;
-}
-#our-team .card h3 {
-  font-size: 1.5em;
-  color: rgb(7, 68, 33); /* Green color */
-  margin-bottom: 15px;
-  font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-#our-team .card p {
+#recuerda .bubble {
+  position: relative;
+  background: #136d45;
+  color: white;
+  padding: 18px 24px;
+  border-radius: 30px;
   font-size: 1em;
-  color: #333;
-  text-align: center;
-  line-height: 1.6;
-  max-width: 250px;
-  margin: 0 auto;
-  font-family: 'Roboto Condensed', sans-serif;
+  max-width: 260px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+}
+
+#recuerda .bubble_text {
+  margin: 0;
+  font-weight: normal;
+  font-style: italic;
+  text-align: left;
+  padding: 0px 20px 10px;
+  font-size: 1em;
+  color: white;
+}
+
+#recuerda .bubble_text_1 {
+  font-family: 'Londrina Solid', cursive;
+  font-size: 1.3em;
+  font-weight: normal;
+  color: #f7b700;
 }
 
 
-button a {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; 
-  display: block; 
-  width: 100%; 
-  height: 100%; 
-}
-button b {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; 
-  display: block; 
-  width: 100%; 
-  height: 100%; 
-}
-button c {
-  text-decoration: none; /* Removes the underline */
-  color: inherit; 
-  display: block; 
-  width: 100%; 
-  height: 100%; 
+#recuerda .bubble:before {
+  content: "";
+  position: absolute;
+  top: -18px; /* movimiento */
+  left: 110px; /* Adjust horizontally as needed */
+  width: 0;
+  height: 0;
+  border-left: 14px solid transparent;
+  border-right: 14px solid transparent;
+  border-bottom: 18px solid #136d45; 
+  border-top: none;
 }
 
-.team-cards {
+#recuerda .container_lista a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 20px 0px;
+  justify-content: space-between;
+}
+#recuerda .lista_social{
+  list-style: none;
+  padding-left: 0;
+  margin-left: 0;
+  margin: 0;
+}
+
+#recuerda .container_lista ul{
   display: flex;
-  justify-content: center;
+  flex-direction: row;
+  justify-content: start;
+  align-items: start;
   gap: 20px;
-  flex-wrap: wrap;
+  padding: 20px 20px;
 }
 
-.card {
-  background-color: white;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  padding: 20px;
-  max-width: 300px;
+#recuerda .lista_social i {
+  margin-right: 8px;
+  color: white; /* color iconos*/
+  font-size: 1.2em;
+  vertical-align: middle;
+}
+
+#recuerda .lista_social span{
+  font-size: 0.5em;
+  
+  vertical-align: middle;
+}
+
+#recuerda .lista_social a span:first-of-type {
+  display: none;
+}
+
+#recuerda .lista_social a span:nth-of-type(2) {
+  display: inline;
+}
+
+#recuerda .lista_social a:hover i {
+  color: #f7b700; /* color iconos hover*/
+  transform: scale(1.1); 
+}
+
+ #recuerda .lista_social a {
+  font-size: 1.8em;
+  color: white;
+  align-items: center;
   text-align: center;
+  position: relative;
 }
-
-.profile-image {
-  background-image: url("media BPA/Jaramillo-Foto.jpg");
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto 15px;
-}
-
-.profile-image-2 {
-  background-image: url("media BPA/Farid-Foto.jpg");
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto 15px;
-}
-
-.profile-image-3 {
-  background-image: url("media BPA/Dilan-Foto.jpg");
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  background-size: cover;
-  background-position: center;
-  margin: 0 auto 15px;
-}
-
-
 
 
 
@@ -717,6 +749,94 @@ footer .social-icons a:hover {
     max-width: 1200px;
     width: 100%;
     gap: 10px;
+  }
+
+
+   #recuerda .circle-img{
+    width:300px;
+    height: 300px;
+  }
+
+  #recuerda .bubble{
+    max-width: 600px;
+    text-align: left; ;
+  }
+
+  #recuerda .bubble-image-container {
+    flex-direction: row;
+    gap: 20px;
+    margin: 40px 0;
+  }
+
+  #recuerda .bubble_text_1{
+    font-family: 'Londrina Solid', cursive;
+    font-size: 2em;
+    font-weight: normal;
+    padding: 30px 20px;
+    margin: 0;
+
+  };
+
+  #recuerda .bubble_text {
+    font-size: 2em;
+    text-align: left;
+  
+  }
+
+
+  #recuerda .bubble:before {
+  content: "";
+  position: absolute;
+  left: -28px;
+  top: 30px;
+  width: 0;
+  height: 0;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-right: 18px solid #136d45
+  }
+
+  #recuerda .container_lista a{
+  text-decoration: none;
+  color: white;
+  font-size: 1.2em;
+  font-weight: normal;
+  padding: 20px 0px;
+  justify-content: space-between;
+  }
+  #recuerda .lista_social{
+    list-style: none;
+    padding-left: 0;
+    margin-left: 0;
+    margin: 0;
+  }
+  #recuerda .container_lista ul{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    gap: 20px;
+    padding: 20px 20px;
+  }
+
+  #recuerda .lista_social a span:first-of-type {
+    display: inline;
+    font-size: 1em;
+  }
+  #recuerda .lista_social a span:nth-of-type(2) {
+    display: none;
+  }
+
+  #recuerda .lista_social i {
+    margin-right: 8px;
+    color: white; /* color iconos*/
+    font-size: 1.4em;
+    vertical-align: middle;
+  }
+
+  #recuerda .lista_social a:hover i {
+    color: #f7b700; /* color iconos hover*/
+    transform: scale(1.1); 
   }
 
   
