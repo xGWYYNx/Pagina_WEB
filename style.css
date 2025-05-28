@@ -1260,6 +1260,8 @@ footer .social-icons a:hover {
 
 }
 
+
+
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
     display: none !important;
@@ -1483,6 +1485,14 @@ footer .social-icons a:hover {
   .card {
     max-width: 320px;
     margin: 0 10px;
+  }
+  
+}
+
+@media screen and (max-width: 425px) {
+  #Infografia .img-container,
+  #Infografia .img-container_1 {
+    display: none;
   }
   
 }
