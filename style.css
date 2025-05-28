@@ -591,6 +591,13 @@ font-weight: bold;
     border-bottom-right-radius: 30px; 
 }
 
+#Infografia .img-container,
+#Infografia .img-container_1 {
+  display: none;
+}
+
+
+
 
 /* Section 7 */
 
@@ -915,22 +922,22 @@ footer .social-icons a:hover {
     padding:20px 20px 20px;
   }
   header .logo span {
-    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transition for hover effects */
+    transition: color 0.3s ease, transform 0.3s ease; 
   }
 
   header .logo:hover {
-    color: #1e6f3d; /* Change the color of the entire phrase */
-    transform: scale(1.1); /* Slightly enlarge the entire phrase */
+    color: #1e6f3d; 
+    transform: scale(1.1); 
   }
 
   header .xis:hover {
-    color: #1e6f3d; /* Change to a darker green on hover */
-    transform: scale(1.1); /* Slightly enlarge the text */
+    color: #1e6f3d; 
+    transform: scale(1.1); 
   }
 
   header .qua:hover {
-    color: #d89a00; /* Change to a darker yellow on hover */
-    transform: scale(1.1); /* Slightly enlarge the text */
+    color: #d89a00; 
+    transform: scale(1.1); 
   }
 
   header nav{
@@ -1080,6 +1087,7 @@ footer .social-icons a:hover {
     font-size: 1.2em;
     justify-content: center;
     margin: 0;
+    color: #000;
   }
 
   #custom-audio-player {
@@ -1130,6 +1138,7 @@ footer .social-icons a:hover {
     display: none;
   }
   #Infografia .img-container {
+    display: flex;
     background-image: url("media BPA/Adecuacion De Areas.png");
     background-size: cover;
     background-position: center center;
@@ -1139,6 +1148,7 @@ footer .social-icons a:hover {
     margin-top: 20px;
   }
   #Infografia .img-container_1{
+    display: flex;
     background-image: url("media BPA/Bienestar .png");
     background-size: cover;
     background-position: center center;
@@ -1250,7 +1260,6 @@ footer .social-icons a:hover {
 
 }
 
-/* Styles for mobile and tablets */
 @media only screen and (max-width: 1023px) {
   .slider-wrapper .slide-button {
     display: none !important;
@@ -1425,6 +1434,59 @@ footer .social-icons a:hover {
 
 
 }
+
+@media screen and ( max-width: 1024px){
+  #Infografia .img-container{
+    display: flex;
+    background-size: contain;
+    height: 450px;
+    width: 900px;
+  }
+
+  #Infografia .img-container_1{
+    display: flex;
+    background-size: contain;
+    height: 450px;
+    width: 900px;
+  }
+  .team-cards {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .card {
+    max-width: 320px;
+    margin: 0 10px;
+  }
+  
+}
+
+@media screen and ( max-width: 768px){
+  #Infografia .img-container{
+    display: flex;
+    background-size: contain;
+    height: 350px;
+    width: 700px;
+  }
+
+  #Infografia .img-container_1{
+    display: flex;
+    background-size: contain;
+    height: 350px;
+    width: 700px;
+  }
+  .team-cards {
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .card {
+    max-width: 320px;
+    margin: 0 10px;
+  }
+  
+}
+
 
 
 

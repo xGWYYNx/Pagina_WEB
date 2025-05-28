@@ -806,7 +806,7 @@ header p {
 
 /* footer */
 footer {
-  background-color: darkgreen;
+  background-color: #136d45;
   padding: 20px 0;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -823,9 +823,11 @@ footer .container {
 }
 
 footer h2 {
-  font-size: 1.5em;
+  font-size: 2.2em;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #f7b700;
+  font-family: 'Londrina Solid', cursive;
+  font-weight: normal;
 }
 
 footer ul {
@@ -991,7 +993,7 @@ footer .social-icons a:hover {
     align-items: center;
     display: flex;
     flex-direction: row;
-    padding: 60px 60px;
+    padding: 60px 150px;
   }
 
   #quien_es .texto_1{
@@ -1063,7 +1065,7 @@ footer .social-icons a:hover {
     grid-template-columns: 2fr 1fr;
     grid-template-rows: repeat(3, 1fr);
     gap: 10px;
-    max-width: 800px;
+    max-width: 600px;
     margin: auto;
     padding: 20px 0px 20px;
   }
@@ -1108,8 +1110,8 @@ footer .social-icons a:hover {
   }
 
   #porque .container p{
-    padding: 20px 100px;
-    font-size: 1.5rem;
+    padding: 20px 120px;
+    font-size: 1.3rem;
     text-align: justify;
   }
 
@@ -1128,8 +1130,9 @@ footer .social-icons a:hover {
     width: auto;
   }
 
-  #voz{
-    padding: 100px;
+  #voz .container{
+    max-width: 1150px;
+    display: block;
   }
 
 
@@ -1156,6 +1159,7 @@ footer .social-icons a:hover {
   .video-carousel{
     max-width: 1000px;
   }
+  
 
 
 
@@ -1183,10 +1187,10 @@ footer .social-icons a:hover {
     padding: 20px 0px;
     margin: 0;
 
-  };
+  }
 
   #recuerda .bubble_text {
-    font-size: 2em;
+    font-size: 1.3em;
   
   }
 
@@ -1330,7 +1334,8 @@ footer .social-icons a:hover {
   #custom-audio-player {
     width: 100%; /* Make it take the full width of the screen */
     padding: 10px; /* Adjust padding for smaller screens */
-    max-width: 100%;
+    max-width: 250px;
+    border-radius: 10px
   }
   .audio-container {
     display: flex;
@@ -1381,6 +1386,19 @@ footer .social-icons a:hover {
     background-color: white;
     cursor: pointer;
   }
+
+  #porque .img-container{
+    height: 150px;
+    width: 240px;
+    background-size: cover;
+    background-position: left;
+  }
+
+  #porque .texto_1 h2{
+    font-size: 2em;
+  }
+
+  
   
 
 }

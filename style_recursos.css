@@ -196,14 +196,14 @@ header p {
 }
 
 #categorias {
-  background-color: rgb(13, 97, 50); /* Light background for the section */
-  padding: 20px 20px; /* Add padding around the section */
-  text-align: center; /* Center-align the content */
+  background-color: rgb(13, 97, 50); 
+  padding: 20px 20px; 
+  text-align: center; 
 }
 
 #categorias .container {
-  max-width: 1200px; /* Restrict the width of the section */
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding: 20px 20px;
 }
 
@@ -254,14 +254,14 @@ header p {
 }
 
 #contenido {
-  background-color: rgb(13, 97, 50); /* Light background for the section */
-  padding: 20px 20px; /* Add padding around the section */
-  text-align: center; /* Center-align the content */
+  background-color: rgb(13, 97, 50); 
+  padding: 20px 20px;
+  text-align: center; 
 }
 
 #contenido .container {
-  max-width: 1200px; /* Restrict the width of the section */
-  margin: 0 auto; /* Center the container */
+  max-width: 1200px; 
+  margin: 0 auto; 
   padding: 20px 20px;
 }
 
@@ -283,6 +283,7 @@ header p {
   justify-content: center;
   text-align: center;
   margin: 20px auto; /* Center the card */
+  max-width: 325px;
 }
 
 #contenido .img-container{
@@ -300,6 +301,10 @@ header p {
   text-align: center;
 }
 #contenido .boton_descarga{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
   background-color: rgb(13, 97, 50);
   color: white;
   text-decoration: none;
@@ -308,19 +313,21 @@ header p {
   margin: auto auto; 
 }
 
+
 #contenido .boton_descarga:hover{
-  background-color: #0b4d28; /* Darker green on hover */
-  color: white;
-  text-decoration: underline; 
+  color: #f7b700;
+  text-decoration: underline;
+  transform: scale(1.1); 
+  transition: transform 0.3s ease; 
 }
+
 
 #contenido .contenedor_carta{
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 10px;
-  
+  gap: 20px;
 }
 
 #contenido .container_card h2{
@@ -745,14 +752,20 @@ footer .social-icons a:hover {
     display: flex;
     flex-direction: row;
     padding: 20px 20px;
-    justify-content: space-between;
+    justify-content: space-evenly;
     max-width: 1200px;
     width: 100%;
     gap: 10px;
   }
 
+  #contenido .boton_descarga,
+  #contenido .img-container{
+    margin: 0;
+  }
 
-   #recuerda .circle-img{
+
+
+  #recuerda .circle-img{
     width:300px;
     height: 300px;
   }
@@ -839,6 +852,9 @@ footer .social-icons a:hover {
     transform: scale(1.1); 
   }
 
+
+
+
   
   footer .container {
     display: flex;
@@ -894,6 +910,10 @@ footer .social-icons a:hover {
   }
   #son .container{
     padding: 100px 40px;
+  }
+
+  #contenido .card{
+    max-width: 300px;
   }
 
 }
