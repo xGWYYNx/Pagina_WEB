@@ -571,6 +571,7 @@ footer .social-icons a:hover {
   flex-direction: row;
   justify-content: space-evenly ;
   padding: 50px 40px;
+  margin: 0;
   }
 
   #anfitrión .texto_1 :nth-child(1),
