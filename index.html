@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Buenas Practicas Agricolas </title>
+    <link rel="icon" type="image/png" href="media BPA/fav_icon.png">
     <link rel="stylesheet" href="style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
@@ -158,17 +159,18 @@
                     <div class="carta">
                         <h3>Paco</h3>
                         <p>En esta sección averiguaras quien es Paco de donde surge y donde lo puedes encontrar.</p>
-                        <button>→</button>
+                        <a href="Paco.html"><button>→</button></a>
                     </div>
                     <div class="carta">
                         <h3>Recursos</h3>
                         <p>En este sección podras observar y descargar cotenido y material fisico que podras llevar contigo en todo momento</p>
-                        <button>→</button>
+                        <a href="Recursos.html#contenido"><button>→</button></a>
                     </div>
                     <div class="carta">
                         <h3>Mercado</h3>
                         <p>En esta sección podras encontrar proximamente un mercado virtual en el que podras ser participe.</p>
-                        <button>→</button>
+                        <a href="Mercado campesino.html"><button>→</button></a>
+                        
                     </div>
                 </div>
             </div>
@@ -187,7 +189,21 @@
             </div>
         </section>
         </section>
-        
+
+        <!-- mensaje para paco -->
+        <div id="paco-widget">
+            <button id="paco-widget-toggle" aria-label="Abrir chat">
+                <span class="material-symbols-rounded">mail</span>
+            </button>
+            <div id="paco-widget-form-container">
+                <form id="paco-widget-form" autocomplete="off">
+                <div class="paco-widget-title">¿Tienes una duda? <br>Pregúntale directamente a Paco.</div>
+                <textarea name="mensaje" id="paco-widget-textarea" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+                <div id="paco-widget-confirm" style="display:none;">¡Gracias! Tu mensaje ha sido enviado.</div>
+                </form>
+            </div>
+        </div>
     </main>
     <footer>
         <div class="container">
@@ -222,6 +238,7 @@
             </section>
         </div>
     </footer>
+    
     
     <script src="script.js" defer></script>
 </body>

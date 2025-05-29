@@ -524,9 +524,175 @@ header p {
 
 
 
+/* section 6 */
+/* Donation Modal Styles */
+.donation-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0; top: 0; width: 100vw; height: 100vh;
+  background: rgba(0,0,0,0.6);
+  justify-content: center;
+  align-items: center;
+}
+
+.donation-modal.active {
+  display: flex;
+}
+
+.donation-modal-content {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: #fff;
+  border-radius: 18px;
+  padding: 60px 24px 24px 24px;
+  max-width: 600px;
+  width: 90vw;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.18);
+  text-align: center;
+  position: relative;
+  font-family: 'Roboto Condensed', Arial, sans-serif;
+}
+
+.donation-modal-content .img-container {
+  background-image: url("media BPA/Paco_gif.gif");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+}
+
+.donation-modal-content h2 {
+  color: #136d45;
+  margin-bottom: 18px;
+  font-size: 1.4em;
+}
+
+.donation-modal-content p {
+  margin: 10px 0;
+  font-size: 1.1em;
+  color: #222;
+}
+
+.donation-modal-close {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  background: none;
+  border: none;
+  font-size: 2em;
+  color: #136d45;
+  cursor: pointer;
+  transition: color 0.2s;
+  box-shadow: none;
+}
+
+.donation-modal-close:hover {
+  color: #f7b700;
+}
+
+
+/* paco mensaje */
+#paco-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+#paco-widget-toggle {
+  background: #f7b700;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  font-size: 2rem;
+}
+#paco-widget-toggle:hover {
+  background: #e0a800;
+}
+#paco-widget-form-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  width: 320px;
+  max-width: 90vw;
+  padding: 20px 18px 14px 18px;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.3s, transform 0.3s;
+}
+#paco-widget.open #paco-widget-form-container {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+.paco-widget-title {
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+#paco-widget-textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 10px;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+#paco-widget-textarea:focus {
+  border: 1.5px solid #f7b700;
+  outline: none;
+}
+#paco-widget-form button[type="submit"] {
+  width: 100%;
+  background: #f7b700;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#paco-widget-form button[type="submit"]:hover {
+  background: #e0a800;
+}
+#paco-widget-confirm {
+  margin-top: 10px;
+  color: #388e3c;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+
+
+
 /* footer */
 footer {
-  background-color: darkgreen;
+  background-color: #136d45;
   padding: 20px 0;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -543,9 +709,11 @@ footer .container {
 }
 
 footer h2 {
-  font-size: 1.5em;
+  font-size: 2.2em;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #f7b700;
+  font-family: 'Londrina Solid', cursive;
+  font-weight: normal;
 }
 
 footer ul {
@@ -569,7 +737,7 @@ footer ul li a:hover {
 
 footer .social-icons {
   display: flex;
-  justify-content: auto;
+  justify-content: start;
   padding: 0px 10px;
   gap: 30px;
 }
@@ -867,9 +1035,10 @@ footer .social-icons a:hover {
   }
   footer .social-icons {
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 0.5px;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+    font-size: 1.4em;
   }
 
   
@@ -917,6 +1086,96 @@ footer .social-icons a:hover {
   }
 
 }
+@media (max-width: 425px) {
+  .donation-modal-content {
+    display: flex;
+    flex-direction: column;
+    padding: 60px 20px 20px 20px;
+    max-width: 95vw;
+    height: auto;
+    gap: 10px;
+    align-items: center;
+  }
+  .donation-modal-content h2 {
+    font-size: 1.1em;
+  }
+  .donation-modal-content p {
+    font-size: 1em;
+  }
+
+  .donation-modal-close {
+    box-shadow: none;
+  }
+  .donation-modal-close:hover {
+    color: #f7b700;
+  }
+
+  .donation-modal-content .img-container{
+    background-image: url("media BPA/Paco_gif.gif");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+
+  }
+
+  .donation-modal-content button{
+    max-width: 400px;
+    border-radius: 40px;
+    border: none;
+    font-size: 1.3em;
+  }
+
+  .donation-modal-content button:hover {
+    text-decoration: underline;
+    color: #f7b700;
+    background-color: #136d45;
+    font-weight: normal;
+  }
+
+  .donation-modal-content button:active {
+    transform: scale(0.95);
+    transition: transform 0.1s ease; 
+  }
+
+
+  #paco-widget-form-container {
+    width: 98vw;
+    right: -10vw;
+    left: auto;
+    min-width: unset;
+    max-width: 98vw;
+    padding: 10px 4px 8px 4px;
+    font-size: 1em;
+  }
+  #paco-widget {
+    bottom: 8px;
+    right: 8px;
+  }
+  #paco-widget-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+  .paco-widget-title {
+    font-size: 1em;
+  }
+  #paco-widget-textarea {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+  #paco-widget-form button[type="submit"] {
+    font-size: 0.98em;
+    padding: 8px 0;
+  }
+
+
+
+}
+
+
 
 
 

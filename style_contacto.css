@@ -14,7 +14,11 @@ body{
 
 h1{ font-size: 3.5em;}
 h2{ font-size: 2.7em;}
-h3{ font-size: 2em;}
+h3{ font-size: 2em;
+font-family: 'Londrina Solid', cursive;
+color: #136d45;
+font-weight: normal;
+margin: 0;}
 p{ font-size: 1.25em;}
 
 button{
@@ -118,7 +122,7 @@ header p {
         0deg,rgba(0,0,0,0.5),
         rgba(0,0,0,0.5)
 
-    ),url("media BPA/HERO_r.jpg");
+    ),url("media BPA/Hero_C.jpg");
     background-repeat: no-repeat;
     background-size: cover;
     background-position:center center;
@@ -147,6 +151,7 @@ header p {
 /* section 2 */
 
 #anfitrión .container{
+  background-color: #136d45;
   text-align: center;
   align-items: center;
   display: flex;
@@ -154,11 +159,27 @@ header p {
   padding: 50px 40px;
 }
 #anfitrión .texto_1{
-  text-align: center;
-  align-items: center;
+  gap: 10px;
+  text-align: start;
   display: flex;
   flex-direction: column;
 }
+
+#anfitrión .texto_1 p{
+  color: white;
+  text-align: center;
+  
+}
+
+#anfitrión .texto_1 :nth-child(2){
+  font-family: 'Londrina Solid', cursive;
+  color: #f7b700;
+  font-size: 2em;
+  margin: 0;
+  text-align: center;
+}
+
+
 #anfitrión .texto_2{
   display: none;
 }
@@ -168,7 +189,7 @@ header p {
 }
 #anfitrión .img-container{
   background-image:
-  url("media BPA/Paco.png");
+  url("media BPA/Paco_gif.gif");
   background-size: cover;
   background-position: center center;
   height: 200px;
@@ -191,12 +212,7 @@ header p {
   text-align: justify;
 }
 
-
-
-
-
-
-/* section 5 */
+/* section 2 */
 
 #our-team .container {
   display: flex;
@@ -213,9 +229,13 @@ header p {
 
 .titulo {
   font-size: 2.5em;
-  color: rgb(7, 68, 33); /* Green color */
+  color: #136d45;
   margin-bottom: 20px;
-  font-weight: bold;
+  font-weight: normal;
+  font-family: 'Londrina Solid', cursive;
+}
+
+#our-team h3{
   font-family: 'Londrina Solid', cursive;
 }
 
@@ -224,7 +244,7 @@ header p {
   color: rgb(7, 68, 33); /* Green color */
   margin-bottom: 15px;
   font-weight: bold;
-  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-family: 'Londrina Solid', cursive;
 }
 
 #our-team .card p {
@@ -327,13 +347,101 @@ button c {
   animation: cardFadeInUp 0.8s cubic-bezier(.4,0,.2,1) forwards;
 }
 
-
-
+/* paco mensaje */
+#paco-widget {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 9999;
+  font-family: 'Segoe UI', Arial, sans-serif;
+}
+#paco-widget-toggle {
+  background: #f7b700;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.2s;
+  font-size: 2rem;
+}
+#paco-widget-toggle:hover {
+  background: #e0a800;
+}
+#paco-widget-form-container {
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  width: 320px;
+  max-width: 90vw;
+  padding: 20px 18px 14px 18px;
+  position: absolute;
+  bottom: 70px;
+  right: 0;
+  opacity: 0;
+  pointer-events: none;
+  transform: translateY(20px) scale(0.98);
+  transition: opacity 0.3s, transform 0.3s;
+}
+#paco-widget.open #paco-widget-form-container {
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0) scale(1);
+}
+.paco-widget-title {
+  font-weight: 600;
+  font-size: 1.08rem;
+  margin-bottom: 10px;
+  color: #333;
+  text-align: center;
+}
+#paco-widget-textarea {
+  width: 100%;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 10px;
+  font-size: 1rem;
+  resize: none;
+  margin-bottom: 10px;
+  background: #fafafa;
+  transition: border 0.2s;
+}
+#paco-widget-textarea:focus {
+  border: 1.5px solid #f7b700;
+  outline: none;
+}
+#paco-widget-form button[type="submit"] {
+  width: 100%;
+  background: #f7b700;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 0;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+#paco-widget-form button[type="submit"]:hover {
+  background: #e0a800;
+}
+#paco-widget-confirm {
+  margin-top: 10px;
+  color: #388e3c;
+  text-align: center;
+  font-weight: 500;
+  font-size: 1rem;
+}
 
 
 /* footer */
 footer {
-  background-color: darkgreen;
+  background-color: #136d45;
   padding: 20px 0;
   color: #ffffff;
   font-family: Arial, sans-serif;
@@ -350,9 +458,11 @@ footer .container {
 }
 
 footer h2 {
-  font-size: 1.5em;
+  font-size: 2.2em;
   margin-bottom: 10px;
-  color: #ffffff;
+  color: #f7b700;
+  font-family: 'Londrina Solid', cursive;
+  font-weight: normal;
 }
 
 footer ul {
@@ -376,7 +486,7 @@ footer ul li a:hover {
 
 footer .social-icons {
   display: flex;
-  justify-content: auto;
+  justify-content: start;
   padding: 0px 10px;
   gap: 30px;
 }
@@ -457,12 +567,15 @@ footer .social-icons a:hover {
   }
 
   #anfitrión .container{
-  text-align: center;
-  align-items: center;
   display: flex;
   flex-direction: row;
   justify-content: space-evenly ;
   padding: 50px 40px;
+  }
+
+  #anfitrión .texto_1 :nth-child(1),
+  #anfitrión .texto_1 :nth-child(2){
+    text-align: start;
   }
 
   .team-cards {
@@ -488,9 +601,10 @@ footer .social-icons a:hover {
   }
   footer .social-icons {
     display: flex;
-    padding: 0px 20px;
+    padding: 0px 0.5px;
     justify-content: space-between;
-    gap: 20px;
+    gap: 10px;
+    font-size: 1.4em;
   }
 
   
@@ -534,6 +648,42 @@ footer .social-icons a:hover {
   }
 
 }
+
+@media screen and (max-width: 425px) {
+
+  #paco-widget-form-container {
+    width: 98vw;
+    right: -10vw;
+    left: auto;
+    min-width: unset;
+    max-width: 98vw;
+    padding: 10px 4px 8px 4px;
+    font-size: 1em;
+  }
+  #paco-widget {
+    bottom: 8px;
+    right: 8px;
+  }
+  #paco-widget-toggle {
+    width: 48px;
+    height: 48px;
+    font-size: 1.5rem;
+  }
+  .paco-widget-title {
+    font-size: 1em;
+  }
+  #paco-widget-textarea {
+    font-size: 0.95em;
+    padding: 8px;
+  }
+  #paco-widget-form button[type="submit"] {
+    font-size: 0.98em;
+    padding: 8px 0;
+  }
+  
+}
+
+
 
 
 

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Buenas Practicas Agricolas </title>
+    <link rel="icon" type="image/png" href="media BPA/fav_icon.png">
     <link rel="stylesheet" href="style_paco.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
@@ -181,7 +182,7 @@
                 <div class="carousel-track">
                     <div class="carousel-item">
                         <div class="video-wrapper">
-                            <video src="media BPA/Videos/Prueba vid.mp4" poster="media BPA/Paco.jpg" muted></video>
+                            <video src="media BPA/Videos/Paco_Video_1.mp4" poster="media BPA/Thumbnail/Plaguicidas_Caseros.jpg" muted></video>
                             <button class="play-overlay" aria-label="Reproducir video">
                                 <i class="fas fa-play"></i>
                             </button>
@@ -189,7 +190,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="video-wrapper">
-                            <video src="media BPA/Videos/Prueba vid.mp4" poster="media BPA/Paco_line.jpg" muted></video>
+                            <video src="media BPA/Videos/Paco Protección y carteles.mp4" poster="media BPA/Thumbnail/Proteccion_Carteles.jpg" muted></video>
                             <button class="play-overlay" aria-label="Reproducir video">
                                 <i class="fas fa-play"></i>
                             </button>
@@ -197,7 +198,7 @@
                     </div>
                     <div class="carousel-item">
                         <div class="video-wrapper">
-                            <video src="media BPA/Videos/museo_campesino.mp4" poster="media BPA/Paco_shadow.jpg" muted></video>
+                            <video src="media BPA/Videos/Progress Socialization Video.mp4" poster="media BPA/Thumbnail/Sabias_que.jpg" muted></video>
                             <button class="play-overlay" aria-label="Reproducir video">
                                 <i class="fas fa-play"></i>
                             </button>
@@ -221,7 +222,7 @@
         <section id="recuerda">
             <div class="container">
                 <div class="bubble-image-container">
-                    <img src="media BPA/Paco.jpg" alt="Paco" class="circle-img">
+                    <img src="media BPA/Paco_r.gif" alt="Paco" class="circle-img">
                     <div class="bubble">
                         <p class="bubble_text_1">¡Hola! Soy Paco y te ayudo con las BPA.</p>
                         <p class="bubble_text">Recuerda que las Buenas Prácticas Agrícolas son un conjunto de principios y prácticas que buscan mejorar la calidad de los productos agrícolas, proteger el medio ambiente y garantizar la seguridad alimentaria. ¡Cuídalas!</p>
@@ -229,6 +230,21 @@
                 </div>
             </div>
         </section>
+
+        <!-- mensaje para paco -->
+        <div id="paco-widget">
+            <button id="paco-widget-toggle" aria-label="Abrir chat">
+                <span class="material-symbols-rounded">mail</span>
+            </button>
+            <div id="paco-widget-form-container">
+                <form id="paco-widget-form" autocomplete="off">
+                <div class="paco-widget-title">¿Tienes una duda? <br>Pregúntale directamente a Paco.</div>
+                <textarea name="mensaje" id="paco-widget-textarea" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+                <div id="paco-widget-confirm" style="display:none;">¡Gracias! Tu mensaje ha sido enviado.</div>
+                </form>
+            </div>
+        </div>
 
     </main>
     <footer>

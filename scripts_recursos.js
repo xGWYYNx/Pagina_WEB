@@ -71,5 +71,107 @@ nextButton.addEventListener('click', () => {
     }
 });
 
-// Initial display
 displayCards();
+
+document.addEventListener('DOMContentLoaded', function() {
+  let pendingDownloadUrl = null;
+
+  
+  document.querySelectorAll('.boton_descarga').forEach(btn => {
+    btn.addEventListener('click', function(e) {
+      e.preventDefault();
+      if (btn.hasAttribute('href') && btn.getAttribute('href') !== '#') {
+        pendingDownloadUrl = btn.getAttribute('href');
+      } else {
+        pendingDownloadUrl = null;
+      }
+      document.getElementById('donation-modal').classList.add('active');
+    });
+  });
+
+  
+  const downloadBtn = document.querySelector('.donation-modal-download-button');
+  if (downloadBtn) {
+    downloadBtn.onclick = function() {
+     if (pendingDownloadUrl) {
+        window.open(pendingDownloadUrl, '_blank');
+        pendingDownloadUrl = null;
+      }
+      document.getElementById('donation-modal').classList.remove('active');
+    };
+  }
+
+  const closeBtn = document.querySelector('.donation-modal-close');
+  if (closeBtn) {
+    closeBtn.onclick = function() {
+      document.getElementById('donation-modal').classList.remove('active');
+      pendingDownloadUrl = null;
+    };
+  }
+
+  const modal = document.getElementById('donation-modal');
+  if (modal) {
+    modal.onclick = function(e) {
+      if (e.target === this) {
+        this.classList.remove('active');
+        pendingDownloadUrl = null;
+      }
+    };
+  }
+});
+
+// function mensaje paco
+(function() {
+  
+  const widget = document.getElementById('paco-widget');
+  const toggle = document.getElementById('paco-widget-toggle');
+  const formContainer = document.getElementById('paco-widget-form-container');
+  const form = document.getElementById('paco-widget-form');
+  const confirmMsg = document.getElementById('paco-widget-confirm');
+  toggle.onclick = function() {
+    widget.classList.toggle('open');
+    if (widget.classList.contains('open')) {
+      setTimeout(() => {
+        document.getElementById('paco-widget-textarea').focus();
+      }, 200);
+    }
+  };
+  // Close widget when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!widget.contains(e.target) && widget.classList.contains('open')) {
+      widget.classList.remove('open');
+    }
+  });
+
+  
+  form.onsubmit = function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch('https://formspree.io/f/mqaqrwqa', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.querySelector('textarea').value = '';
+        confirmMsg.style.display = 'block';
+        setTimeout(() => {
+          confirmMsg.style.display = 'none';
+          widget.classList.remove('open');
+        }, 2000);
+      } else {
+        confirmMsg.textContent = 'Hubo un error. Intenta de nuevo.';
+        confirmMsg.style.color = '#d32f2f';
+        confirmMsg.style.display = 'block';
+      }
+    })
+    .catch(() => {
+      confirmMsg.textContent = 'Hubo un error. Intenta de nuevo.';
+      confirmMsg.style.color = '#d32f2f';
+      confirmMsg.style.display = 'block';
+    });
+  };
+})();
+
+

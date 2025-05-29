@@ -115,20 +115,20 @@ const initSlider = () => {
         });
     });
 
-     // Show or hide slide buttons based on scroll position
+     
     const handleSlideButtons = () => {
         slideButtons[0].style.display = imageList.scrollLeft <= 0 ? "none" : "flex";
         slideButtons[1].style.display = imageList.scrollLeft >= maxScrollLeft ? "none" : "flex";
     }
 
-    // Update scrollbar thumb position based on image scroll
+    
     const updateScrollThumbPosition = () => {
         const scrollPosition = imageList.scrollLeft;
         const thumbPosition = (scrollPosition / maxScrollLeft) * (sliderScrollbar.clientWidth - scrollbarThumb.offsetWidth);
         scrollbarThumb.style.left = `${thumbPosition}px`;
     }
 
-    // Call these two functions when image list scrolls
+    
     imageList.addEventListener("scroll", () => {
         updateScrollThumbPosition();
         handleSlideButtons();
@@ -139,17 +139,14 @@ window.addEventListener("resize", initSlider);
 window.addEventListener("load", initSlider);
 
 
-// Interaction buton categorys
-// Select all buttons and cards
 const filterButtons = document.querySelectorAll('.container_categorias button');
 const cards = document.querySelectorAll('.container_card .card');
 
-// Add click event listeners to each button
+
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
         const filter = button.getAttribute('data-filter'); // Get the filter category
 
-        // Show or hide cards based on the filter
         cards.forEach(card => {
             const category = card.getAttribute('data-category');
 
@@ -164,10 +161,64 @@ filterButtons.forEach(button => {
 
 filterButtons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remove 'active' class from all buttons
+        
         filterButtons.forEach(btn => btn.classList.remove('active'));
 
-        // Add 'active' class to the clicked button
         button.classList.add('active');
     });
 });
+
+
+(function() {
+  
+  const widget = document.getElementById('paco-widget');
+  const toggle = document.getElementById('paco-widget-toggle');
+  const formContainer = document.getElementById('paco-widget-form-container');
+  const form = document.getElementById('paco-widget-form');
+  const confirmMsg = document.getElementById('paco-widget-confirm');
+  toggle.onclick = function() {
+    widget.classList.toggle('open');
+    if (widget.classList.contains('open')) {
+      setTimeout(() => {
+        document.getElementById('paco-widget-textarea').focus();
+      }, 200);
+    }
+  };
+  // Close widget when clicking outside
+  document.addEventListener('click', function(e) {
+    if (!widget.contains(e.target) && widget.classList.contains('open')) {
+      widget.classList.remove('open');
+    }
+  });
+
+  
+  form.onsubmit = function(e) {
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch('https://formspree.io/f/mqaqrwqa', {
+      method: 'POST',
+      body: data,
+      headers: { 'Accept': 'application/json' }
+    })
+    .then(response => {
+      if (response.ok) {
+        form.querySelector('textarea').value = '';
+        confirmMsg.style.display = 'block';
+        setTimeout(() => {
+          confirmMsg.style.display = 'none';
+          widget.classList.remove('open');
+        }, 2000);
+      } else {
+        confirmMsg.textContent = 'Hubo un error. Intenta de nuevo.';
+        confirmMsg.style.color = '#d32f2f';
+        confirmMsg.style.display = 'block';
+      }
+    })
+    .catch(() => {
+      confirmMsg.textContent = 'Hubo un error. Intenta de nuevo.';
+      confirmMsg.style.color = '#d32f2f';
+      confirmMsg.style.display = 'block';
+    });
+  };
+})();
+

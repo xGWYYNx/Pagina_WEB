@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Proyecto Buenas Practicas Agricolas </title>
+    <link rel="icon" type="image/png" href="media BPA/fav_icon.png">
     <link rel="stylesheet" href="style_recursos.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0"/>
@@ -89,7 +90,7 @@
                         <div class="img-container" alt="Imagen_PDF"></div>
                         <h3>Manual Básico de Señalización</h3>
                         <p >Paso a paso para iniciar las BPA en tu finca</p>
-                        <a class="boton_descarga" target="_blank" href="Documentos\Manual de señalización.pdf">Descargar <span>3.2 MB</span></a>
+                        <a class="boton_descarga" target="_blank"      href="Documentos/Manual de señalización.pdf">Descargar <span>3.2 MB</span></a>
                     </div>
                 </div>
     
@@ -99,7 +100,8 @@
                         <aside class="img-container" alt="Imagen_Audio"></aside>
                         <h3>Material Físico:Recomendaciones</h3>
                         <p>Infografía para imprimir o compartir por WhatsApp</p>
-                        <a href="#" class="boton_descarga"">Descargar <span>3.8 KB</span></a>
+                        <a href="Documentos/Material_fisico.pdf"  
+                        target="_blank" class="boton_descarga">Descargar <span>3.8 KB</span></a>
                     </div>
                 </div>
     
@@ -109,7 +111,7 @@
                         <aside class="img-container" alt="Imagen_Audio"></aside>
                         <h3>Señalización</h3>
                         <p>Aquí podras encontar todas las señalizaciones para tu finca </p>
-                        <a href="Documentos\Fisico señalización.pdf" target="_blank" class="boton_descarga">Descargar <span>1.2 MB</span></a>
+                        <a href="Documentos/Fisico señalización.pdf"  target="_blank" class="boton_descarga">Descargar <span>1.2 MB</span></a>
                     </div>
                 </div>
     
@@ -119,7 +121,7 @@
                         <aside class="img-container" alt="Imagen_Audio"></aside>
                         <h3>Capítulo 1: ¿Por qué aplicar BPA?</h3>
                         <p>Paco al Grano te lo explica con humor</p>
-                        <a href="media BPA\Podcast 2.mp3" target="_blank"class="boton_descarga">Descargar<span>2.5 MB</span></a>          
+                        <a href="media BPA\Podcast 2.mp3" class="boton_descarga">Descargar<span>2.5 MB</span></a>          
                     </div>
                 </div>
     
@@ -127,9 +129,9 @@
                 <div class="card" data-category="infografias">
                     <div class="contenedor_carta" >
                         <aside class="img-container" alt="Imagen_Audio"></aside>
-                        <h3 class="font-semibold text-lg text-green-800">Bienestar de los trabajadores</h3>
-                        <p class="text-sm text-gray-600">Paco al Grano te lo explica con humor</p>
-                        <a href="#" class="boton_descarga">Descargar <span>2.5 MB</span></a>
+                        <h3>Bienestar de los trabajadores</h3>
+                        <p>Paco al Grano te lo explica con humor</p>
+                        <a class="boton_descarga">Descargar <span>2.5 MB</span></a>
                     </div>
                 </div>
     
@@ -139,7 +141,7 @@
                         <aside class="img-container" alt="Imagen_Audio"></aside>
                         <h3>Bienestar de los trabajadores</h3>
                         <p>Paco al Grano te lo explica con humor</p>
-                        <a href="#" class="boton_descarga">Descargar <span>3.8 KB</span></a>
+                        <a class="boton_descarga">Descargar <span>3.8 KB</span></a>
                     </div>
                 </div>
     
@@ -149,7 +151,7 @@
                         <aside class="img-container" alt="Imagen_Audio"></aside>
                         <h3>Bienestar de los trabajadores</h3>
                         <p>Paco al Grano te lo explica con humor</p>
-                        <a href="#" class="boton_descarga">Descargar <span>2.5 MB</span></a>
+                        <a class="boton_descarga">Descargar <span>2.5 MB</span></a>
                     </div>
                 </div>
     
@@ -159,7 +161,7 @@
                         <aside class="img-container" alt="Imagen_Audio"></aside>
                         <h3>Bienestar de los trabajadores</h3>
                         <p>Paco al Grano te lo explica con humor</p>
-                        <a href="#" class="boton_descarga">Descargar <span>1.2 MB</span></a>
+                        <a class="boton_descarga">Descargar <span>1.2 MB</span></a>
                     </div>
                 </div>
     
@@ -207,6 +209,34 @@
             </div>
         </section>
 
+
+        <!-- Donation Modal -->
+        <div id="donation-modal" class="donation-modal">
+        <div class="donation-modal-content">
+            <button class="donation-modal-close" aria-label="Cerrar">&times;</button>
+            <h2>¡Apóyanos con una donación!</h2>
+            <p><strong>Nequi:</strong> 321 421 5811</p>
+            <div class="img-container"></div>
+            <p>¡Gracias por tu apoyo!</p>
+            <button class="donation-modal-download-button">Descargar</button>
+        </div>
+        </div>
+
+        <!-- mensaje para paco -->
+        <div id="paco-widget">
+            <button id="paco-widget-toggle" aria-label="Abrir chat">
+                <span class="material-symbols-rounded">mail</span>
+            </button>
+            <div id="paco-widget-form-container">
+                <form id="paco-widget-form" autocomplete="off">
+                <div class="paco-widget-title">¿Tienes una duda? <br>Pregúntale directamente a Paco.</div>
+                <textarea name="mensaje" id="paco-widget-textarea" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                <button type="submit">Enviar mensaje</button>
+                <div id="paco-widget-confirm" style="display:none;">¡Gracias! Tu mensaje ha sido enviado.</div>
+                </form>
+            </div>
+        </div>
+
     </main>
 
     <footer>
@@ -244,6 +274,6 @@
     </footer>
 
 
-    <script src="scripts_recursos.js" defer></script>      
+    <script src="scripts_recursos.js" defer></script>    
 </body>
 </html>
