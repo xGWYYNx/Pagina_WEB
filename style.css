@@ -7,7 +7,6 @@
 }
 
 body{
-  overflow-x: hidden;
   font-family: 'Roboto Condensed', Georgia, 'Times New Roman', Times, serif;
   margin: 0;
 }
@@ -838,11 +837,12 @@ button c {
 
 /* paco mensaje */
 #paco-widget {
-  position: fixed;
-  bottom: 24px;
-  right: 24px;
-  z-index: 9999;
-  font-family: 'Segoe UI', Arial, sans-serif;
+  position: fixed !important;
+  bottom: 24px !important;
+  right: 24px !important;
+  left: auto !important;
+  top: auto !important;
+  z-index: 9999 !important;
 }
 #paco-widget-toggle {
   background: #f7b700;
