@@ -1526,6 +1526,49 @@ footer .social-icons a:hover {
   
 }
 
+@media screen and (max-width: 1024px){
+  #quien_es .container_1{
+    padding: 60px 40px;
+  }
+  #quien_es .content p{
+    font-size: 1.2rem;
+  }
+
+
+  #porque .img-container{
+    height: 420px;
+    width: 880px;
+  }
+  #porque .container p{
+    padding: 20px 20px;
+  }
+
+
+
+}
+
+@media screen and (max-width: 768px){
+
+  #quien_es .content p{
+    font-size: 1rem;
+  }
+
+  #quien_es .content{
+    padding: 40px 0px;
+  }
+
+  #porque .img-container{
+    height: 240px;
+    width: 660px;
+  }
+
+  #porque .container p{
+    padding: 20px 20px;
+  }
+}
+
+
+
 
 
 
